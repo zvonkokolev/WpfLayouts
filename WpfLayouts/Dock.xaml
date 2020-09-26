@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfLayouts.Dock"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLayouts"
+        mc:Ignorable="d"
+        Title="Dock" Height="450" Width="450">
+    <DockPanel x:Name="DockWindow">
+        <Button x:Name="btnTop1" Content="Top 1" Width="Auto" DockPanel.Dock="Top" VerticalAlignment="Top"/>
+        <Button x:Name="btnBottom2" Content="Bottom 1" Width="Auto" VerticalAlignment="Bottom" DockPanel.Dock="Bottom"/>
+        <Button x:Name="btnBottom1" Content="Bottom 2" Width="Auto" VerticalAlignment="Bottom" DockPanel.Dock="Bottom"/>
+        <Button x:Name="btnLeft" Content="Left" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+        <Button x:Name="btnRight1" Content="Right 1" Width="Auto" HorizontalAlignment="Right" DockPanel.Dock="Right"/>
+        <Button x:Name="btnTop2" Content="Top 2" Width="Auto" DockPanel.Dock="Top" VerticalAlignment="Top"/>
+        <Button x:Name="btnRight2" Content="Right 2" Width="Auto" DockPanel.Dock="Right" HorizontalAlignment="Right"/>
+        <Button x:Name="btnCenter" Content="Center" Width="Auto"/>
+
+    </DockPanel>
+</Window>
